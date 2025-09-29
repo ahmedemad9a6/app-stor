@@ -39,7 +39,7 @@ class _SplashState extends State<Splash> {
        Gap(10),
 
       
-      AnimationLine()
+
 
 
 

@@ -12,12 +12,15 @@ class Customappbar extends StatelessWidget implements PreferredSizeWidget {
       final Function()? onTap;
   @override
   Widget build(BuildContext context) {
+    //! fix space between widget in app bar 
     return AppBar(   
       title: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           
-        GestureDetector(child:SvgPicture.asset(prefix,width: 24) ,),
+        GestureDetector(onTap: onTap,
+          
+          child:SvgPicture.asset(prefix,width: 24) ,),
          Gap(110),
           Text(
               title,
